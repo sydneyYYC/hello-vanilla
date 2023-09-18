@@ -6,9 +6,39 @@ body {
   margin: 0;
 }
 
+/*parent nav flexbox*/
+nav{
+  display: flex;
+  justify-content: space-between;
+
+  background-color:hsl(180, 5%, 9%);
+}
+
+/*nav links styles*/
+nav a{
+  display: block;
+
+  text-decoration: none;
+  text-align: center;
+
+  padding: 1rem;
+  width: min-content;
+
+  background-color:	hsl(180, 5%, 9%);
+  color:	hsl(240, 11%, 96%);
+}
+
+/* nav links hover*/
+nav a:hover {
+  background-color: hsl(180, 5%, 9%);
+  color:hsl(240, 11%, 96%);
+}
+
+/*nav links flexbox*/
 nav ul{
   display: flex;
   justify-content: flex-end;
+  align-items:center;
 
   margin: 0;
   padding-left: 0;
@@ -16,29 +46,16 @@ nav ul{
 
   list-style: none;
   background-color: hsl(180, 5%, 9%);
-
 }
 
-nav a{
-  padding: 1rem;
-  display: block;
-  text-decoration: none;
-  width: min-content;
-  background-color:	hsl(180, 5%, 9%);
-  text-align: center;
-  color:	hsl(240, 11%, 96%);
-
-}
-
-nav a:hover {
-  background-color: hsl(180, 5%, 9%);
-  color:hsl(240, 11%, 96%);
-}
-
+/*icon flexbox*/ 
 .navimg{
-  display: block;
+ justify-content: flex-start;
+ align-items:center;
+
  border-radius: 50%;
- width:100px;
- height:100px;
-  
+ width:50px;
+ height:50px;
+
+ padding:1rem;
 }
